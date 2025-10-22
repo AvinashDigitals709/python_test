@@ -3,10 +3,11 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                git 'https://github.com/AvinashDigitals709/python_test'
+             steps {
+                git branch: 'main', url: 'https://github.com/AvinashDigitals709/python_test.git'
             }
         }
+
 
         stage('Install Dependencies') {
             steps {
